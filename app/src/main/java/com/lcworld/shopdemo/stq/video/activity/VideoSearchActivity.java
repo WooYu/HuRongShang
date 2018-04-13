@@ -1,0 +1,117 @@
+package com.lcworld.shopdemo.stq.video.activity;
+
+
+import android.text.TextUtils;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.lcworld.shopdemo.R;
+import com.lcworld.shopdemo.base.BaseActivity;
+import com.lcworld.shopdemo.base.BaseFrameLayout;
+
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
+/**
+ * 搜索视频页面
+ */
+public class VideoSearchActivity extends BaseActivity {
+
+    @BindView(R.id.ll_input_click)
+    LinearLayout llInputClick;
+    @BindView(R.id.et_search)
+    EditText etSearch;
+    @BindView(R.id.ll_del)
+    LinearLayout llDel;
+    @BindView(R.id.tv_cancel)
+    TextView tvCancel;
+    @BindView(R.id.lv_content)
+    ListView lvContent;
+
+    private List<String> mList;
+    private String content;
+    private Unbinder unbinder;
+
+    @Override
+    protected int setContentView() {
+        return R.layout.s_act_search;
+    }
+
+    @Override
+    protected void initView() {
+        unbinder = ButterKnife.bind(this);
+        baseFrameLayout.setState(BaseFrameLayout.STATE_SUCCESS);
+
+    }
+
+    @Override
+    protected void initData() {
+    }
+
+    @Override
+    protected void setListener() {
+        etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((actionId == 0 || actionId == 3) && event != null) {
+                    search();
+                }
+                return false;
+            }
+        });
+//        UIManager.turnToAct(VideoSearchActivity.this, VideoDetailsActivity.class);
+    }
+
+    @Override
+    protected boolean setWindowDye() {
+        return false;
+    }
+
+    @Override
+    protected boolean setActionBarView() {
+        return false;
+    }
+
+    @OnClick({R.id.tv_cancel, R.id.ll_del, R.id.ll_input_click})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_cancel:
+                finish();
+                break;
+            case R.id.ll_del:
+                etSearch.setText("");
+                break;
+            case R.id.ll_input_click:
+                search();
+                break;
+        }
+    }
+
+    /**
+     * 搜索
+     */
+    public void search() {
+        String text = etSearch.getText().toString();
+        if (TextUtils.isEmpty(text)) {
+            showToast("请先输入搜索内容");
+            return;
+        }
+    }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
+    }
+
+}

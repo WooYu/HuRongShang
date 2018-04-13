@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_all_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_01"
+                style="@style/bottom_ll_style">
+
+
+                <ImageView
+                    android:id="@+id/iv_bottom_01"
+                    style="@style/bottom_iv_style2"
+                    android:src="@mipmap/qx2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_02"
+                style="@style/bottom_ll_style">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_02"
+                    style="@style/bottom_iv_style2"
+                    android:src="@mipmap/bg1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_03"
+                style="@style/bottom_ll_style">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_03"
+                    style="@style/bottom_iv_style2"
+                    android:src="@mipmap/yw1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_04"
+                style="@style/bottom_ll_style">
+
+
+                <ImageView
+                    android:id="@+id/iv_bottom_04"
+                    style="@style/bottom_iv_style2"
+                    android:src="@mipmap/yb1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_05"
+                style="@style/bottom_ll_style">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_05"
+                    style="@style/bottom_iv_style2"
+                    android:src="@mipmap/ybgwd1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

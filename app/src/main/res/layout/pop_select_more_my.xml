@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_dismiss_01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_pop_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_btn_white_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_qr_scan"
+                style="@style/pop_select_more_ll"
+                android:background="@color/transparent">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_scan" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="扫一扫" />
+            </LinearLayout>
+
+            <View style="@style/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_qr_code"
+                style="@style/pop_select_more_ll">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_qrcode" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="二维码" />
+            </LinearLayout>
+
+            <View style="@style/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_add_rm"
+                style="@style/pop_select_more_ll">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_add_friend" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="添加" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_make_group"
+                style="@style/pop_select_more_ll"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_add_group" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="建群" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_edit_fenzu"
+                style="@style/pop_select_more_ll"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_edit_fenzu" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="编辑分组" />
+            </LinearLayout>
+
+            <View style="@style/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_change_mode"
+                style="@style/pop_select_more_ll">
+
+                <ImageView
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_more_change_mode" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="切换主页" />
+            </LinearLayout>
+
+            <View style="@style/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_yjhj_setting"
+                style="@style/pop_select_more_ll"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/iv_select_more_style"
+                    android:src="@mipmap/icon_yjhj_red" />
+
+                <TextView
+                    style="@style/pop_select_more_tv"
+                    android:text="一键呼叫" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_dismiss_02"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

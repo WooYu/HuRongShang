@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.lcworld.shopdemo.base.Actionbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    app:titleText="私聊"
+    app:titleTextSize="@dimen/actionbar_title_size"
+    tools:showIn="@layout/fragment_chat">
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_right_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_top_more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_toLeftOf="@+id/rl_yjhj"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_right_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_top_search" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yjhj"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_toLeftOf="@+id/ll_more">
+
+
+        <ImageView
+            android:id="@+id/iv_yjhj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_yjhj_count" />
+
+        <TextView
+            android:id="@+id/tv_yjhj_count"
+            style="@style/yjhj_red_count_style"
+            android:visibility="gone" />
+    </RelativeLayout>
+</com.lcworld.shopdemo.base.Actionbar>

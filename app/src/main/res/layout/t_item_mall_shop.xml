@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/all_padding_left"
+        android:layout_marginRight="@dimen/all_padding_left">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_tran_rounded"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/dp8"
+            android:paddingLeft="@dimen/all_padding_left"
+            android:paddingRight="@dimen/all_padding_left"
+            android:paddingTop="@dimen/dp8"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_commmon_big" />
+    </FrameLayout>
+
+
+</LinearLayout>

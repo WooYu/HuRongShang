@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lcworld.shopdemo">
+
+    <application
+        android:name=".base.application.CCApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".base.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rmq.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" />
+        <activity
+            android:name=".rmq.activity.SingleChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 华丽的分割线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线 -->
+        <!-- 拓商圈start -->
+        <activity
+            android:name=".tsq.ui.main.activity.T_MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- <activity -->
+        <!-- android:name="com.lcworld.shopdemo.tsq.ui.gomallorshopping.gomall.activity.TChooseLocationActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme_chat" -->
+        <!-- android:windowSoftInputMode="adjustPan|stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.lcworld.shopdemo.tsq.ui.gomallorshopping.gomall.activity.TShopCategoryActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme_chat" -->
+        <!-- android:windowSoftInputMode="adjustPan|stateHidden" /> -->
+        <activity
+            android:name=".tsq.ui.gomallorshopping.gomall.activity.T_MarketMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".tsq.ui.gomallorshopping.goshopping.activity.T_ShopMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 拓商圈end -->
+        <!-- 华丽的分割线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线 -->
+
+
+        <!-- 社团圈start -->
+        <activity
+            android:name=".stq.S_MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.headline.activity.NewsSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.headline.activity.NewsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.video.activity.VideoSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.video.activity.HistoryVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.video.activity.VideoDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.nearby.activity.NearbySearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.video.activity.VideoPlayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.nearby.activity.SwitchLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".sh.activity.T_SHMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.T_YBGMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".stq.CYDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".sh.activity.OrdersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".tsq.ui.gomallorshopping.goshopping.activity.T_QYMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".tsq.ui.gomallorshopping.goshopping.activity.GoodsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".tsq.ui.gomallorshopping.goshopping.activity.TGoodsCardCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".rmq.activity.ChangeChatModeAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.YBGsettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.YBGXxtzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.KQActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.KQTXActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ybg.activity.QJActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".pt.activity.T_PTMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".pt.activity.ZPDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".pt.activity.WDJLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".pt.activity.TDJLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_chat"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 社团圈end -->
+
+
+        <!-- 华丽的分割线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线 -->
+        <activity android:name=".sjq.SJQMainAct" />
+        <activity android:name=".pt.activity.QiYeMerchantAct"></activity>
+    </application>
+
+</manifest>

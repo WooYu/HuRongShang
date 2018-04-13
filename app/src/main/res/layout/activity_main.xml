@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context=".rmq.activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_all_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_01"
+            style="@style/bottom_ll_style">
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_bottom_out_width"
+                android:layout_height="@dimen/main_bottom_out_width">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_01"
+                    style="@style/bottom_iv_style"
+                    android:src="@mipmap/icon_single_normal" />
+
+                <TextView
+                    android:id="@+id/tv_red_circle_01"
+                    style="@style/bottom_msg_circle_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_01"
+                style="@style/bottom_tv_style"
+                android:text="私聊" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_02"
+            style="@style/bottom_ll_style">
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_bottom_out_width"
+                android:layout_height="@dimen/main_bottom_out_width">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_02"
+                    style="@style/bottom_iv_style"
+                    android:src="@mipmap/icon_group_normal" />
+
+                <TextView
+                    android:id="@+id/tv_red_circle_02"
+                    style="@style/bottom_msg_circle_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_02"
+                style="@style/bottom_tv_style"
+                android:text="群聊" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_03"
+            style="@style/bottom_ll_style">
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_bottom_out_width"
+                android:layout_height="@dimen/main_bottom_out_width">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_03"
+                    style="@style/bottom_iv_style"
+                    android:src="@mipmap/icon_circle_normal" />
+
+                <TextView
+                    android:id="@+id/tv_red_circle_03"
+                    style="@style/bottom_msg_circle_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_03"
+                style="@style/bottom_tv_style"
+                android:text="朋友圈" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_04"
+            style="@style/bottom_ll_style">
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_bottom_out_width"
+                android:layout_height="@dimen/main_bottom_out_width">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_04"
+                    style="@style/bottom_iv_style"
+                    android:src="@mipmap/icon_contact_normal" />
+
+                <TextView
+                    android:id="@+id/tv_red_circle_04"
+                    style="@style/bottom_msg_circle_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_04"
+                style="@style/bottom_tv_style"
+                android:text="云薄" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_05"
+            style="@style/bottom_ll_style">
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_bottom_out_width"
+                android:layout_height="@dimen/main_bottom_out_width">
+
+                <ImageView
+                    android:id="@+id/iv_bottom_05"
+                    style="@style/bottom_iv_style"
+                    android:src="@mipmap/icon_my_normal" />
+
+                <TextView
+                    android:id="@+id/tv_red_circle_05"
+                    style="@style/bottom_msg_circle_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_05"
+                style="@style/bottom_tv_style"
+                android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:focusable="false"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/navigation_single_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="私聊"
+                android:textColor="@color/navigation_txt_sel"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/navigation_group_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="群聊"
+                android:textColor="@color/navigation_txt_sel"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/navigation_friends_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="朋友圈"
+                android:textColor="@color/navigation_txt_sel"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/navigation_contact_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="云薄"
+                android:textColor="@color/navigation_txt_sel"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/navigation_my_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="我的"
+                android:textColor="@color/navigation_txt_sel"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>
