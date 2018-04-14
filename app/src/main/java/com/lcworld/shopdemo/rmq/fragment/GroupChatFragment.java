@@ -102,7 +102,7 @@ public class GroupChatFragment extends BaseFragment implements Actionbar.Actionb
 //            @Override
 //            public void onClick(View v) {
 //                Bundle bundle = new Bundle();
-//                bundle.putInt("fenzuType", 1);//0私聊 1群聊 2人脉圈
+//                bundle.putInt("fenzuType", 1);//0私聊 1群聊 2社交圈
 //                UIManager.turnToAct(getActivity(), FenzuManageAct.class, bundle);
 //            }
 //        });

@@ -7,6 +7,7 @@ import android.view.View;
 import com.lcworld.shopdemo.R;
 import com.lcworld.shopdemo.base.BaseFragment;
 import com.lcworld.shopdemo.base.UIManager;
+import com.lcworld.shopdemo.pt.activity.QiYeMerchantAct;
 import com.lcworld.shopdemo.tsq.ui.gomallorshopping.goshopping.activity.GoodsDetailActivity;
 import com.lcworld.shopdemo.tsq.ui.gomallorshopping.goshopping.activity.TGoodsCardCategoryActivity;
 import com.lcworld.shopdemo.tsq.ui.gomallorshopping.goshopping.activity.T_QYMainActivity;
@@ -63,7 +64,7 @@ public class TShopHomeFragment extends BaseFragment {
                 getActivity().finish();
                 break;
             case R.id.iv35:
-                UIManager.turnToAct(getActivity(), T_QYMainActivity.class);
+                UIManager.turnToAct(getActivity(), QiYeMerchantAct.class);
 
                 break;
             case R.id.iv31:

@@ -322,7 +322,7 @@ public class AppConfig {
         return preferences.getLong("Millis_logout_time", 0l);
     }
 
-    //投诉投诉类型0：用户 1：群组 2：人脉圈
+    //投诉投诉类型0：用户 1：群组 2：社交圈
     public void setComplainType(int complainType) {
         preferencesSetInt("complainType", complainType);
     }

@@ -546,7 +546,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="返回人脉圈"
+                    android:text="返回社交圈"
                     android:textColor="@color/black_666666"
                     android:textSize="@dimen/sp_commmon_big" />
 

@@ -9,6 +9,7 @@ import android.view.WindowManager;
 
 import com.lcworld.shopdemo.R;
 import com.lcworld.shopdemo.pt.activity.T_PTMainActivity;
+import com.lcworld.shopdemo.rmq.activity.LoginActivity;
 import com.lcworld.shopdemo.rmq.activity.MainActivity;
 import com.lcworld.shopdemo.stq.S_MainActivity;
 import com.lcworld.shopdemo.tsq.ui.main.activity.T_MainActivity;
@@ -28,29 +29,30 @@ public class SplashActivity extends AppCompatActivity {
             super.handleMessage(msg);
             switch (msg.what) {
                 case COMPLETE:
-//                    if (AppConfig.getInstance().getIsFirst()) {
-//                        //第一次打开应用 启动引导页面
-//                        AppConfig.getInstance().setIsFirst(false);
-//                        ActivitySkipUtil.skip(SplashActivity.this, GuideActivity.class);
-//                    } else {
-                    //先判断上次退出是哪个端退出的
-                    switch (AppConfig.getInstance().getMainType()) {
-                        case 0:
-                            UIManager.turnToAct(SplashActivity.this, MainActivity.class);
-                            break;
-                        case 1:
-                            UIManager.turnToAct(SplashActivity.this, T_MainActivity.class);
-                            break;
-                        case 2:
-                            UIManager.turnToAct(SplashActivity.this, S_MainActivity.class);
-                            break;
-                        case 3:
-                            UIManager.turnToAct(SplashActivity.this, T_PTMainActivity.class);
-                            break;
-                        default:
-                            break;
+
+                    UIManager.turnToAct(SplashActivity.this, LoginActivity.class);
+                    if (AppConfig.getInstance().getIsFirst()) {
+                        //第一次打开应用
+                        UIManager.turnToAct(SplashActivity.this, LoginActivity.class);
+                    } else {
+                        //先判断上次退出是哪个端退出的
+                        switch (AppConfig.getInstance().getMainType()) {
+                            case 0:
+                                UIManager.turnToAct(SplashActivity.this, MainActivity.class);
+                                break;
+                            case 1:
+                                UIManager.turnToAct(SplashActivity.this, T_MainActivity.class);
+                                break;
+                            case 2:
+                                UIManager.turnToAct(SplashActivity.this, S_MainActivity.class);
+                                break;
+                            case 3:
+                                UIManager.turnToAct(SplashActivity.this, T_PTMainActivity.class);
+                                break;
+                            default:
+                                break;
+                        }
                     }
-//                    }
                     finish();
                     break;
             }

@@ -28,6 +28,7 @@ public class ContactFragment extends BaseFragment {
     private ImageView iv66;
     private ImageView iv77;
     private ImageView iv1;
+    private ImageView ivTitle;
     Unbinder unbinder;
 
     @Override
@@ -51,6 +52,7 @@ public class ContactFragment extends BaseFragment {
         iv55 = (ImageView) view.findViewById(R.id.iv55);
         iv66 = (ImageView) view.findViewById(R.id.iv66);
         iv77 = (ImageView) view.findViewById(R.id.iv77);
+        ivTitle = (ImageView) view.findViewById(R.id.iv_title);
         iv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -204,35 +206,38 @@ public class ContactFragment extends BaseFragment {
         iv66.setImageResource(R.mipmap.yb6a);
         iv77.setImageResource(R.mipmap.yb7a);
         switch (i) {
-            case 1:
+            case 1://人脉号
                 iv11.setImageResource(R.mipmap.yb1b);
-                iv1.setImageResource(R.mipmap.yb_lb);
-
+                iv1.setImageResource(R.mipmap.shejiaoquan_content_rmq);
+                ivTitle.setImageResource(R.mipmap.shejiaoquan_title_rmh);
                 break;
-            case 2:
+            case 2://社团号
                 iv22.setImageResource(R.mipmap.yb2b);
-                iv1.setImageResource(R.mipmap.yb2c);
-
+                iv1.setImageResource(R.mipmap.shejiaoquan_content_sth);
+                ivTitle.setImageResource(R.mipmap.shejiaoquan_title_sth);
                 break;
-            case 3:
+            case 3://企业号
                 iv33.setImageResource(R.mipmap.yb3b);
-                iv1.setImageResource(R.mipmap.yb3c);
+                iv1.setImageResource(R.mipmap.shejiaoquan_content_qyh);
+                ivTitle.setImageResource(R.mipmap.shejiaoquan_title_qyh);
                 break;
-            case 4:
+            case 4://商家号
                 iv44.setImageResource(R.mipmap.yb4b);
-                iv1.setImageResource(R.mipmap.yb4c);
+                iv1.setImageResource(R.mipmap.shejiaoquan_content_sjh);
+                ivTitle.setImageResource(R.mipmap.shejiaoquan_title_sjh);
                 break;
-            case 5:
+            case 5://创业号
                 iv55.setImageResource(R.mipmap.yb5b);
                 iv1.setImageResource(R.mipmap.yb5c);
                 break;
-            case 6:
+            case 6://电话簿
                 iv66.setImageResource(R.mipmap.yb6b);
                 iv1.setImageResource(R.mipmap.yb6c);
                 break;
-            case 7:
+            case 7://地址簿
                 iv77.setImageResource(R.mipmap.yb7b);
-                iv1.setImageResource(R.mipmap.yb7c);
+                iv1.setImageResource(R.mipmap.shejiaoquan_content_dzp);
+                ivTitle.setImageResource(R.mipmap.shejiaoquan_title_dzp);
                 break;
             default:
                 break;

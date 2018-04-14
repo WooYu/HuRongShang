@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lcworld.shopdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".base.application.CCApplication"
         android:allowBackup="true"
@@ -198,7 +200,15 @@
 
         <!-- 华丽的分割线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线线 -->
         <activity android:name=".sjq.SJQMainAct" />
-        <activity android:name=".pt.activity.QiYeMerchantAct"></activity>
+        <activity android:name=".pt.activity.QiYeMerchantAct" />
+        <activity android:name=".pt.activity.QiYeZhiXiaoAct" />
+        <activity android:name=".tsq.ui.main.activity.SJQMainActivity" />
+        <activity android:name=".stq.headline.activity.SheTuanQuanMainActivity" />
+        <activity android:name=".pt.activity.QiYeQuanMainAct" />
+        <activity android:name=".rmq.activity.PersonInfoActivity" />
+        <activity android:name=".rmq.activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

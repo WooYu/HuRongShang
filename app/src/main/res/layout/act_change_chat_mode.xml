@@ -27,7 +27,7 @@
 
             <TextView
                 style="@style/tv_chat_setting_style"
-                android:text="人脉圈" />
+                android:text="社交圈" />
 
             <ImageView
                 android:id="@+id/iv_rmq"

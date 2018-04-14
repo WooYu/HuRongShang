@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.lcworld.shopdemo.MessageEvent;
 import com.lcworld.shopdemo.R;
 import com.lcworld.shopdemo.base.BaseActivity;
 import com.lcworld.shopdemo.base.BaseFrameLayout;
@@ -17,6 +18,10 @@ import com.lcworld.shopdemo.sh.fragment.SSHMarketFragment;
 import com.lcworld.shopdemo.sh.fragment.SSHMyFragment;
 import com.lcworld.shopdemo.sh.fragment.SSHVideoFragment;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -24,7 +29,7 @@ import butterknife.Unbinder;
 
 
 /**
- * 商会——主页
+ * 社团圈-商会——主页
  */
 public class T_SHMainActivity extends BaseActivity {
 
@@ -71,6 +76,7 @@ public class T_SHMainActivity extends BaseActivity {
     protected void initView() {
         unbinder = ButterKnife.bind(this);
         baseFrameLayout.setState(BaseFrameLayout.STATE_SUCCESS);
+        EventBus.getDefault().register(this);
     }
 
     @Override
@@ -201,7 +207,12 @@ public class T_SHMainActivity extends BaseActivity {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        EventBus.getDefault().unregister(this);
         unbinder.unbind();
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MessageEvent event) {
+        finish();
+    }
 }

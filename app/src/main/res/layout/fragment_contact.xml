@@ -10,6 +10,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/iv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
@@ -23,22 +24,29 @@
     </FrameLayout>
 
     <HorizontalScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:scrollbars="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <ImageView
-                android:id="@+id/iv22"
+                android:id="@+id/iv11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@mipmap/yb2a" />
+                android:src="@mipmap/yb1b" />
+
+            <ImageView
+                android:id="@+id/iv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yb4a" />
 
             <ImageView
                 android:id="@+id/iv33"
@@ -48,27 +56,11 @@
                 android:src="@mipmap/yb3a" />
 
             <ImageView
-                android:id="@+id/iv44"
+                android:id="@+id/iv22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@mipmap/yb4a" />
-
-
-            <ImageView
-                android:id="@+id/iv11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@mipmap/yb1b" />
-
-
-            <ImageView
-                android:id="@+id/iv66"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@mipmap/yb6a" />
+                android:src="@mipmap/yb2a" />
 
             <ImageView
                 android:id="@+id/iv77"
@@ -77,11 +69,19 @@
                 android:scaleType="fitXY"
                 android:src="@mipmap/yb7a" />
 
+            <ImageView
+                android:id="@+id/iv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yb6a" />
 
             <ImageView
                 android:id="@+id/iv55"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:scaleType="fitXY"
                 android:src="@mipmap/yb5a" />
         </LinearLayout>

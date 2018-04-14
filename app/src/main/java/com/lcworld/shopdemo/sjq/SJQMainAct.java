@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.lcworld.shopdemo.R;
 
+@Deprecated
 public class SJQMainAct extends AppCompatActivity {
 
     @Override

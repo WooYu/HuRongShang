@@ -97,7 +97,7 @@ public class FriendsCircleFragment extends BaseFragment implements View.OnClickL
 //            @Override
 //            public void onClick(View v) {
 //                Bundle bundle = new Bundle();
-//                bundle.putInt("fenzuType", 2);//0私聊 1群聊 2人脉圈
+//                bundle.putInt("fenzuType", 2);//0私聊 1群聊 2社交圈
 //                UIManager.turnToAct(getActivity(), FenzuManageAct.class, bundle);
 //            }
 //        });
